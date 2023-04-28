@@ -4,10 +4,9 @@ import DashboardBox from "../../components/DashboardBox";
 import { useGetRegionQuery } from "../../state/api";
 import { Box, Link, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import React, { Fragment, useContext, useMemo } from "react";
+import React, { Fragment, useContext } from "react";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
 import {
-  Cell,
   Legend,
   Pie,
   PieChart,
@@ -26,7 +25,6 @@ const RowThree = () => {
   const { data } = useGetRegionQuery(selectedRegion);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
   const { palette } = useTheme();
-  const pieColors = [palette.primary[800], palette.primary[500]];
 
   const regionData = [];
 

@@ -20,6 +20,4 @@ export const api = createApi({
   }),
 });
 
-// `/api/stats?country=${country}&end_year=${end_year}&sector=${sector}&topic=${topic}&region=${region}&postle=${postle}&likelihood=${likelihood}`
-
 export const { useGetCountryQuery, useGetTopicQuery, useGetRegionQuery } = api;

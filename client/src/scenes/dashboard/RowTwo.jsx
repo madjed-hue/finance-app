@@ -101,8 +101,6 @@ const RowTwo = () => {
     );
   }, [groupedCountryData, selectedCountry]);
 
-  // console.log(groupedCountryData[selectedCountry]);
-
   const pieData = [
     { name: "Group A", value: groupedIntensityData },
     { name: "Group B", value: groupedLiklihoodData },
